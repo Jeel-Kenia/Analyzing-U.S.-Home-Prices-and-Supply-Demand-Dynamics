@@ -41,3 +41,6 @@ PERMIT: New Privately-Owned Housing Units Authorized in Permit-Issuing Places: T
 CSUSHPISA: S&P/Case-Shiller U.S. National Home Price Index, Index Jan 2000=100, Quarterly, Seasonally Adjusted. The S&P Case-Shiller U.S. National Home Price Index (CSUSHPISA) is used as a proxy for home prices and serves as the dependent variable in the analysis.
 
 The data taken is on quartery basis with GDP, UNRATE, MSACR, TLRESCONS, PERMIT AND CSUSHPISA being seasonally adjusted and the rest not seasonally adjusted.
+
+
+# Data cleaning and preprocessing
