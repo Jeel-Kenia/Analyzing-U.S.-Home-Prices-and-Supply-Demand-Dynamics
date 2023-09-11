@@ -1,46 +1,61 @@
-# Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics
+# Introduction
 In this project, we aim to analyse various supply demand factors that affect U.S. Home prices over the last 20 years. Home prices can be affected due to various demand and supply factors such as GDP, Population, House inventory, etc. It is important to find the relation between these factors and house prices to develop a robust predictive model. 
 
 Demand and supply are fundamental economic concepts that describe the relationship between the quantity of a good or service that consumers are willing to buy (demand) and the quantity of that good or service that producers are willing to supply (supply) at different prices. These concepts are essential for understanding how prices and quantities are determined in markets.The law of demand and supply states that as the price of goods/services increases the demand for it would decrease (consumers tend to buy less to reduce loss) and the supply for it would increase (prodcuers would want to sell more to increase profit). The interaction of demand and supply determines the equilibrium price and quantity in a market.
 
-Our goal it to find the relation between various demand and supply dactors over the last 20 years and present it with meaningful insights and, a machine learning model which helps find the important factors for price change.
+# Purpose of the Project
+In this project, we aim to:
 
+- Gather historical data on U.S. home prices using the S&P Case-Schiller Home Price Index.
+- Collect additional publicly available data on key supply and demand factors affecting the housing market.
+- Perform data analysis to identify trends and correlations between housing prices and supply-demand factors.
+- Create data visualizations to present insights and findings.
+- Build predictive models to explain how these factors impacted home prices over the last 20 years.
+  
 # About the Dataset
-The Data for this project is collected from FRED(Federal Reserve Economic Data) which is the official site for U.S. Economic data. The different factors considered for this project are:
+**The Data for this project is collected from FRED(Federal Reserve Economic Data) which is the official site for U.S. Economic data.** The different factors considered for this project are:
 
-observation_date: The range of period taken for analysis. Data taken from 01-01-2003 to 01-04-2023.
+**`observation_date`**: The range of period taken for analysis. Data taken from 01-01-2003 to 01-04-2023.
 
-ASPUS: Average Sales Price of Houses Sold for the United States, Dollars. This represents the average value of house sale pricesd for a specific period.
+**`ASPUS`**: Average Sales Price of Houses Sold for the United States, Dollars. This represents the average value of house sale pricesd for a specific period.
 
-MSPUS: Median Sales Price of Houses Sold for the United States, Dollars. The median sales price is the middle value in a list of all house sale prices, with half of the sales prices falling below this value and half above it.
+**`MSPUS`**: Median Sales Price of Houses Sold for the United States, Dollars. The median sales price is the middle value in a list of all house sale prices, with half of the sales prices falling below this value and half above it.
 
-EVACANTUSQ176N: Housing Inventory Estimate: Vacant Housing Units in the United States, Thousands of Units. It provides information about the estimated number of vacant housing units in the United States at a given point in time or over a specific period.
+**`EVACANTUSQ176N`**: Housing Inventory Estimate: Vacant Housing Units in the United States, Thousands of Units. It provides information about the estimated number of vacant housing units in the United States at a given point in time or over a specific period.
 
-ETOTALUSQ176N: Housing Inventory Estimate: Total Housing Units in the United States, Thousands of Units. The data represents the estimated total count of housing units, which includes a wide range of residential properties such as single-family homes, multi-family units, apartments, condominiums, and other types of dwellings.
+**`ETOTALUSQ176N`**: Housing Inventory Estimate: Total Housing Units in the United States, Thousands of Units. The data represents the estimated total count of housing units, which includes a wide range of residential properties such as single-family homes, multi-family units, apartments, condominiums, and other types of dwellings.
 
-GDP: Gross Domestic Product, Billions of Dollars.
+**`GDP`**: Gross Domestic Product, Billions of Dollars.
 
-UNRATE: Unemployment Rate, Percent. The unemployment rate is a critical labor market indicator that measures the proportion of people in the labor force who are without a job and are actively looking for work.	
+**`UNRATE`**: Unemployment Rate, Percent. The unemployment rate is a critical labor market indicator that measures the proportion of people in the labor force who are without a job and are actively looking for work.	
 
-INTDSRUSM193N: Interest Rates, Discount Rate for United States, Percent per Annum. It is the interest rate at which eligible depository institutions (typically banks and credit unions) can borrow money from their regional Federal Reserve Bank
+**`INTDSRUSM193N`**: Interest Rates, Discount Rate for United States, Percent per Annum. It is the interest rate at which eligible depository institutions (typically banks and credit unions) can borrow money from their regional Federal Reserve Bank
 
-MORTGAGE15US: 15-Year Fixed Rate Mortgage Average in the United States, Percent. It is a type of home loan where the interest rate remains constant (fixed) for the entire 15-year term of the loan. 
+**`MORTGAGE15US`**: 15-Year Fixed Rate Mortgage Average in the United States, Percent. It is a type of home loan where the interest rate remains constant (fixed) for the entire 15-year term of the loan. 
 
-MORTGAGE30U: 30-Year Fixed Rate Mortgage Average in the United States, Percent. It is a type of home loan where the interest rate remains constant (fixed) for the entire 15-year term of the loan.
+**`MORTGAGE30U`**: 30-Year Fixed Rate Mortgage Average in the United States, Percent. It is a type of home loan where the interest rate remains constant (fixed) for the entire 15-year term of the loan.
 
-UMCSENT: University of Michigan: Consumer Sentiment, Index 1966:Q1=100. It is a measure of consumer confidence and attitudes toward the economy. It reflects consumers' perceptions of their current financial situation, as well as their expectations for future economic conditions.
+**`UMCSENT`**: University of Michigan: Consumer Sentiment, Index 1966:Q1=100. It is a measure of consumer confidence and attitudes toward the economy. It reflects consumers' perceptions of their current financial situation, as well as their expectations for future economic conditions.
 
-MSACSR: Monthly Supply of New Houses in the United States, Months' Supply. The data indicates the supply of newly constructed homes available in the market each month. This supply is typically measured in the number of months it would take to sell the current inventory of new homes at the current sales pace.
+**`MSACSR`**: Monthly Supply of New Houses in the United States, Months' Supply. The data indicates the supply of newly constructed homes available in the market each month. This supply is typically measured in the number of months it would take to sell the current inventory of new homes at the current sales pace.
 
-TLRESCONS: Total Construction Spending: Residential in the United States, Millions of Dollars. The data indicates the total monetary value of spending on residential construction projects in the United States. It encompasses spending on various types of residential construction, including single-family homes, multi-family dwellings, and residential improvements.
+**`TLRESCONS`**: Total Construction Spending: Residential in the United States, Millions of Dollars. The data indicates the total monetary value of spending on residential construction projects in the United States. It encompasses spending on various types of residential construction, including single-family homes, multi-family dwellings, and residential improvements.
 
-POPTHM: Population, Thousands. This data represents the total population of the country for a specific period of time.
+**`POPTHM`**: Population, Thousands. This data represents the total population of the country for a specific period of time.
 
-PERMIT: New Privately-Owned Housing Units Authorized in Permit-Issuing Places: Total Units, Thousands of Units. It showcases the number of new privately-owned housing units that have been authorized or permitted for construction in a specific geographical area over a given period of time	
+**`PERMIT`**: New Privately-Owned Housing Units Authorized in Permit-Issuing Places: Total Units, Thousands of Units. It showcases the number of new privately-owned housing units that have been authorized or permitted for construction in a specific geographical area over a given period of time	
 
-CSUSHPISA: S&P/Case-Shiller U.S. National Home Price Index, Index Jan 2000=100, Quarterly, Seasonally Adjusted. The S&P Case-Shiller U.S. National Home Price Index (CSUSHPISA) is used as a proxy for home prices and serves as the dependent variable in the analysis.
+**`CSUSHPISA`**: S&P/Case-Shiller U.S. National Home Price Index, Index Jan 2000=100, Quarterly, Seasonally Adjusted. The S&P Case-Shiller U.S. National Home Price Index (CSUSHPISA) is used as a proxy for home prices and serves as the dependent variable in the analysis.
 
 The data taken is on quartery basis with GDP, UNRATE, MSACR, TLRESCONS, PERMIT AND CSUSHPISA being seasonally adjusted and the rest not seasonally adjusted.
 
 
 # Data cleaning and preprocessing
+Data has been cleaned and pre-processed to treat:
+* Null Values
+* Duplicates
+* Incorrect Data Structures
+* Outliers
+
+
+
