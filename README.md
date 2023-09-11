@@ -49,13 +49,15 @@ In this project, we aim to:
 
 The data taken is on quartery basis with GDP, UNRATE, MSACR, TLRESCONS, PERMIT AND CSUSHPISA being seasonally adjusted and the rest not seasonally adjusted.
 
-
 # Data cleaning and preprocessing
 Data has been cleaned and pre-processed to treat:
 * Null Values
 * Duplicates
 * Incorrect Data Structures
 * Outliers
+
+# Exploratory Data Analysis
+
 
 
 
