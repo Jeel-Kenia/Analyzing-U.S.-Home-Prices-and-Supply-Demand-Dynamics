@@ -1,10 +1,10 @@
 # Introduction
-![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/0d37867b-d0a8-44b7-8c62-a1c73809e34e.jpg)
-Image from Financial Times
-
 In this project, we aim to analyse various supply demand factors that affect U.S. Home prices over the last 20 years. Home prices can be affected due to various demand and supply factors such as GDP, Population, House inventory, etc. It is important to find the relation between these factors and house prices to develop a robust predictive model. 
 
 Demand and supply are fundamental economic concepts that describe the relationship between the quantity of a good or service that consumers are willing to buy (demand) and the quantity of that good or service that producers are willing to supply (supply) at different prices. These concepts are essential for understanding how prices and quantities are determined in markets.The law of demand and supply states that as the price of goods/services increases the demand for it would decrease (consumers tend to buy less to reduce loss) and the supply for it would increase (prodcuers would want to sell more to increase profit). The interaction of demand and supply determines the equilibrium price and quantity in a market.
+
+![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/0d37867b-d0a8-44b7-8c62-a1c73809e34e.jpg)
+Image Courtesy: [Financial Times](https://www.ft.com/content/b9df3102-a7d2-483d-8216-f507c0460d3d)
 
 # Purpose of the Project
 In this project, we aim to:
@@ -78,7 +78,39 @@ Various models were analysed to find the model with the best performance. The st
 - `Mean Absolute Error(MAE)` and `R Squared` values were used as evaluation metric for model evaluation.
 - Finding the most important features which resulted in fluctuations in the Home Price Index.
 
+# Key Insights
+![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/Screenshot%202023-09-11%20at%2012.33.46%20PM.png)
 
+Features such as "GDP," "Total Construction Spending," and "Housing Inventory Estimate(Total)" have the highest positive coefficients. This suggests that increases in these variables are strongly associated with higher home prices. Specifically:
+
+"GDP" has the highest positive coefficient, indicating that an increase in GDP is associated with a substantial increase in home prices.
+
+"Total Construction Spending" also has a strong positive influence on home prices.
+
+"Housing Inventory Estimate(Total)" has a positive impact, suggesting that a larger inventory of available housing is associated with higher home prices.
+
+Feature such as "Consumer Sentiment", "Mortgage rates" and "Housing Inventory estimate(Vacant)" have week coefficients. This suggests that a change in these variables would not afffect home prices substantially. 
+
+# Conclusion
+This project aimed to find different supply demand factors that drove house prices nationally in the U.S. with the help of machine learning models, we were ble to find out the most accurate and efficient model that assisted in predicting house prices and finding out the factors that influenced house prices over the years.
+
+# Files Included
+
+Data.xlsx: The dataset used for the analysis.
+
+model.ipynb: Jupyter Notebook documenting the complete data analysis and model building process.
+
+README.md: This README file providing an overview of the project.
+
+# Usage and Exploration
+
+Feel free to explore the Jupyter Notebook (model2.ipynb) to understand the entire data analysis process, from data preprocessing to model evaluation. If you're interested in predicting U.S. Home prices due to different supply demand factors and or understanding how predictive analytics can drive business decisions, this project can serve as a valuable resource.
+
+Contact
+
+If you have any questions, suggestions, or would like to discuss the project, predictive analytics, or the insurance industry, please feel free to contact me at jeelkenia.jk@gmail.com.
+
+Thank you for visiting this repository!
 
 
 
