@@ -106,7 +106,7 @@ README.md: This README file providing an overview of the project.
 
 Feel free to explore the Jupyter Notebook (model2.ipynb) to understand the entire data analysis process, from data preprocessing to model evaluation. If you're interested in predicting U.S. Home prices due to different supply demand factors and or understanding how predictive analytics can drive business decisions, this project can serve as a valuable resource.
 
-Contact
+# Contact
 
 If you have any questions, suggestions, or would like to discuss the project, predictive analytics, or the insurance industry, please feel free to contact me at jeelkenia.jk@gmail.com.
 
