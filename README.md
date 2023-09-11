@@ -1,4 +1,7 @@
 # Introduction
+![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/0d37867b-d0a8-44b7-8c62-a1c73809e34e.jpg)
+Image from Financial Times
+
 In this project, we aim to analyse various supply demand factors that affect U.S. Home prices over the last 20 years. Home prices can be affected due to various demand and supply factors such as GDP, Population, House inventory, etc. It is important to find the relation between these factors and house prices to develop a robust predictive model. 
 
 Demand and supply are fundamental economic concepts that describe the relationship between the quantity of a good or service that consumers are willing to buy (demand) and the quantity of that good or service that producers are willing to supply (supply) at different prices. These concepts are essential for understanding how prices and quantities are determined in markets.The law of demand and supply states that as the price of goods/services increases the demand for it would decrease (consumers tend to buy less to reduce loss) and the supply for it would increase (prodcuers would want to sell more to increase profit). The interaction of demand and supply determines the equilibrium price and quantity in a market.
