@@ -57,6 +57,35 @@ Data has been cleaned and pre-processed to treat:
 * Outliers
 
 # Exploratory Data Analysis
+EDA has been done to find the relationship between the features and the target variable. You can find the correlation heatmap depicting relation of features with the Home Price Index below:
+
+![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/Screenshot%202023-09-11%20at%2011.42.25%20AM.png)
+
+Different data visualizations have been created showcase relationship of the Case-Shiller Home Price Index with each variable individually.
+
+![image](https://github.com/Jeel-Kenia/Analyzing-U.S.-Home-Prices-and-Supply-Demand-Dynamics/blob/main/Screenshot%202023-09-11%20at%2011.59.43%20AM.png)
+
+# Machine Learning Models:
+Various models were analysed to find the model with the best performance. The steps followed to create an efficient machine learning model were as follows:
+
+- Assigning feature and target variables to X and y respectively.
+- Splitting the data into training set for developing the model and testing set for model evaluation
+- Scaling training data for better model development and accuracy.
+- Using different machine learning models such as `Linear regression`, `KNN`, `Decision Tree`, `Ridge`, `Lasso`, `XG Boost` and `SVR` to find the most efficient model.
+- `Mean Absolute Error(MAE)` and `R Squared` values were used as evaluation metric for model evaluation.
+- Finding the most important features which resulted in fluctuations in the Home Price Index.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
